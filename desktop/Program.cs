@@ -1,3 +1,7 @@
-﻿using System;
+﻿using chrono.Game;
+using osu.Framework;
 
-Console.WriteLine("Hello, world!");
+using var host = Host.GetSuitableDesktopHost(@"chrono-trigger");
+using var game = new GameApplication();
+
+host.Run(game);
